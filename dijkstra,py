@@ -38,7 +38,7 @@ def dijkstra(graph, initial):
 
         for edge in graph.edges[min_node]:
             try:
-                weight = current_weight + graph.distances[(min_node, edge)]
+                weight = current_weight + int(graph.distances[(min_node, edge)])
             except:
                 continue
             if edge not in visited or weight < visited[edge]:
