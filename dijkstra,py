@@ -49,7 +49,7 @@ def dijkstra(graph, initial):
 
 
 def shortest_path(graph, origin, destination):
-    visited, paths = dijsktra(graph, origin)
+    visited, paths = dijkstra(graph, origin)
     full_path = deque()
     _destination = paths[destination]
 
